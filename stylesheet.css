@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+list-style: none;
+scroll-behavior: smooth;
+}
+
+:root{
+ --bg-color: #2a2a2a;
+--second-bg-color: #202020;
+--text-color:#fff;
+--second-color:#ccc;
+--main-color: #ff4d05;
+--big-font: 5rem;
+--h2-font: 3rem;
+--p-font:1.1rem;
+}
+
+body{
+    background-color: #0a0a0b;
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease ;
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+span{
+    color: rgb(170, 0, 0);
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a {
+    color: #cfbcaa;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+
+.navlist a:hover{
+    color: #f7e7de;
+}
+
+.navlist a.active{
+    color: rgb(170, 0, 0);
+ 
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none
+
+
+}
+
+section{
+    padding: 160px 15% 120px;
+}
+
+.inicio{
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../doramalove/img/alquimia.jpg);
+    background-size: cover;
+    background-position: 50;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide{
+    margin-bottom: 20px;
+}
+
+.two{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inicio-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    list-style: 1.1;
+    margin: 0 0 8px;
+
+}
+
+.inicio-text p{
+    color: #d6caca;
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.buttom{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn{
+    color: aliceblue;
+    display: inline-block;
+    padding: 12px 28px;
+    background-color:rgb(255, 0, 0) ;
+    border-radius: 8px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+}
+
+.btn:hover{
+    color: aliceblue;
+    transform: scale(0.9);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn{
+    color: aliceblue;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 35px;
+}
+
+.btn span i{
+    color: aliceblue;
+    height: 22px;
+    width: 35px;
+    background-color: rgb(255, 0, 0) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.btn span i :hover{
+    color: aliceblue;
+    transform: scale(1.1) translate(5px);
+
+}
+
+header.sticky{
+    background-color: #0a0a0b;
+    border-radius: 1px solid #ffffff1a;
+    padding: 12px 15%;
+}
+
+.sobre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5;
+    
+}
+
+.sobre .btn{
+    margin-top: 5px;
+}
+
+.sobre-img img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.sobre-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.sobre-text p{
+    color: #d6caca;
+    font-size: var(--p-font);
+    line-height: 1.8;
+}
+
+
+.elenco-img{
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.elenco-text h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.elenco p{
+    padding-top: 15px;
+    color: #d6caca;
+    font-size: var(--p-font);
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: #131010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form h1{
+    padding-right: 15px;
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid; 
+}
+
